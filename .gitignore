@@ -22,4 +22,5 @@ vendor/
 .dart_tool/
 .packages
 build/
+*.jks
 

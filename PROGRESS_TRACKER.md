@@ -120,15 +120,15 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 
 ## Mobile Development
 
-- [ ] Flutter/Dart or React Native basics
-- [ ] Local storage
-- [ ] REST API integration
-- [ ] One complete CRUD mobile app
+- [x] Flutter/Dart or React Native basics (built as native Android/Java instead, per this session's Java-preferred directive — see 05-Mobile-Development/01-03)
+- [x] Local storage
+- [x] REST API integration
+- [x] One complete CRUD mobile app
 
 ## Desktop Development
 
-- [ ] One desktop framework (WPF, JavaFX, Electron, or Tauri)
-- [ ] One CRUD desktop app
+- [x] One desktop framework (WPF, JavaFX, Electron, or Tauri)
+- [x] One CRUD desktop app
 
 ## Databases
 
@@ -170,26 +170,26 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 
 ## Testing and Debugging
 
-- [ ] Unit testing
-- [ ] Integration testing
-- [ ] End-to-end testing
-- [ ] Test-driven development
-- [ ] Debugging techniques
+- [x] Unit testing
+- [x] Integration testing
+- [x] End-to-end testing
+- [x] Test-driven development
+- [x] Debugging techniques
 
 ## Security
 
-- [ ] OWASP Top 10 awareness
-- [ ] Secure password storage
-- [ ] Input validation and output encoding
-- [ ] HTTPS and security headers
+- [x] OWASP Top 10 awareness
+- [x] Secure password storage
+- [x] Input validation and output encoding
+- [x] HTTPS and security headers
 
 ## Git and GitHub
 
-- [ ] Core commands (add, commit, push, pull)
-- [ ] Branching and merging
-- [ ] Rebase and cherry-pick
-- [ ] Pull requests and code review
-- [ ] GitHub Actions basics
+- [x] Core commands (add, commit, push, pull)
+- [x] Branching and merging
+- [x] Rebase and cherry-pick
+- [x] Pull requests and code review
+- [x] GitHub Actions basics
 
 ## DevOps and Cloud
 
