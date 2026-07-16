@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Rivera — Frontend Developer Portfolio</title>
+  <meta name="description" content="Portfolio site for Alex Rivera, a frontend developer, showcasing projects and skills.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap navbar">
+      <strong>Alex Rivera</strong>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="about" class="hero wrap">
+      <h1>Hi, I'm Alex — I build fast, accessible web interfaces.</h1>
+      <p>Frontend developer focused on semantic HTML, maintainable CSS, and vanilla JavaScript before reaching for a framework.</p>
+      <a class="button" href="#projects">See my work</a>
+    </section>
+
+    <section id="projects" class="wrap">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Task Tracker</h3>
+          <p>A localStorage-backed task manager with no build step. Pure functions separated from DOM code for testability.</p>
+        </article>
+        <article class="card">
+          <h3>Expense Dashboard</h3>
+          <p>A budgeting tool with category breakdowns rendered as accessible, keyboard-navigable charts.</p>
+        </article>
+        <article class="card">
+          <h3>Recipe Finder</h3>
+          <p>Semantic markup for search results, with a responsive card grid that reflows using CSS Grid alone.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="wrap">
+      <h2>Skills</h2>
+      <table>
+        <caption>Core skills and years of hands-on experience</caption>
+        <thead>
+          <tr>
+            <th scope="col">Skill</th>
+            <th scope="col">Years</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">HTML5 / CSS3</th><td>6</td></tr>
+          <tr><th scope="row">JavaScript</th><td>5</td></tr>
+          <tr><th scope="row">Accessibility (WCAG)</th><td>3</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contact" class="wrap">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required minlength="2" autocomplete="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>&copy; 2026 Alex Rivera. Mini-project for Complete-Programming-Mastery / 02-Markup-and-Styling.</p>
+  </footer>
+
+</body>
+</html>

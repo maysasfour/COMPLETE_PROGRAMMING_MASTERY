@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Management CRUD</title>
+  <meta name="description" content="A vanilla HTML/CSS/JavaScript task manager with localStorage persistence." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app__header">
+      <h1>Task Manager</h1>
+      <p class="app__subtitle">A dependency-free CRUD app. Your tasks are saved in this browser only.</p>
+    </header>
+
+    <main class="app__main">
+      <section class="add-task" aria-label="Add a new task">
+        <form id="add-task-form" class="add-task__form" novalidate>
+          <div class="add-task__row">
+            <label for="new-task-title" class="visually-hidden">Task title</label>
+            <input
+              type="text"
+              id="new-task-title"
+              name="title"
+              placeholder="What needs to be done?"
+              maxlength="200"
+              autocomplete="off"
+              required
+            />
+            <button type="submit" class="btn btn--primary">Add Task</button>
+          </div>
+          <div class="add-task__row">
+            <label for="new-task-description" class="visually-hidden">Task description (optional)</label>
+            <input
+              type="text"
+              id="new-task-description"
+              name="description"
+              placeholder="Description (optional)"
+              maxlength="1000"
+              autocomplete="off"
+            />
+          </div>
+          <p id="form-error" class="form-error" role="alert" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="task-controls" aria-label="Filter tasks">
+        <div id="filter-bar" class="filter-bar" role="group" aria-label="Filter tasks by status">
+          <button type="button" class="filter-btn filter-btn--active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-btn" data-filter="active" aria-pressed="false">Active</button>
+          <button type="button" class="filter-btn" data-filter="completed" aria-pressed="false">Completed</button>
+        </div>
+        <p id="task-count" class="task-count">0 active / 0 total</p>
+      </section>
+
+      <section aria-label="Task list">
+        <ul id="task-list" class="task-list"></ul>
+        <p id="empty-state" class="empty-state" hidden>No tasks to show. Add one above to get started.</p>
+      </section>
+    </main>
+
+    <footer class="app__footer">
+      <p>Data is stored only in this browser's localStorage. See README.md for details.</p>
+    </footer>
+  </div>
+
+  <!--
+    Loaded in dependency order as plain classic scripts (not type="module")
+    so the app also runs from a file:// URL without CORS/module-loading
+    restrictions some browsers apply to ES modules over file://.
+    Each script attaches its public API to `window` for the next script
+    in the chain to consume — see the comment atop each file for why.
+  -->
+  <script src="js/taskLogic.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/events.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

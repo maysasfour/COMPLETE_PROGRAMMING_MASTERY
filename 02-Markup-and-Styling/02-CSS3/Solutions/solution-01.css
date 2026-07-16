@@ -1,0 +1,98 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --card-bg: #f5f5f5;
+  --accent: #2563eb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --text: #f0f0f0;
+    --card-bg: #1e1e1e;
+    --accent: #60a5fa;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Reflows from 1 to 3 columns purely from auto-fit + minmax - no media query needed */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  position: relative;
+  background: var(--card-bg);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px color-mix(in srgb, var(--text) 15%, transparent);
+}
+
+.card--highlighted {
+  border-color: var(--accent);
+}
+
+.badge {
+  position: absolute;
+  top: -0.75rem;
+  left: 1.5rem;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  margin: 0;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.price span {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--text);
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.card li {
+  padding: 0.35rem 0;
+  border-top: 1px solid color-mix(in srgb, var(--text) 10%, transparent);
+}
+
+.card li:first-child {
+  border-top: none;
+}

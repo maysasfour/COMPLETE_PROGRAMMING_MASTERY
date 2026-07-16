@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic HTML5 Demo</title>
+  <style>
+    /* Minimal inline styling so the semantic structure below is legible without a separate CSS file.
+       Real layout/styling techniques are covered in the next lesson, 02-CSS3. */
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
+    nav ul { display: flex; gap: 1rem; list-style: none; padding: 0; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+    label { display: block; margin-top: 0.75rem; font-weight: bold; }
+    input, textarea { width: 100%; padding: 0.4rem; box-sizing: border-box; }
+    footer { margin-top: 2rem; color: #666; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Semantic HTML5 Demo</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article id="about">
+      <h2>About This Page</h2>
+      <p>
+        This file exists to demonstrate semantic HTML5 structure, a proper data table,
+        an accessible form with native browser validation, and a media embed — all in
+        one runnable file with no build step and no server required.
+      </p>
+
+      <section aria-labelledby="table-heading">
+        <h3 id="table-heading">Sample Data Table</h3>
+        <table>
+          <caption>Quarterly sign-ups by region</caption>
+          <thead>
+            <tr>
+              <th scope="col">Region</th>
+              <th scope="col">Q1</th>
+              <th scope="col">Q2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">North</th>
+              <td>120</td>
+              <td>150</td>
+            </tr>
+            <tr>
+              <th scope="row">South</th>
+              <td>95</td>
+              <td>110</td>
+            </tr>
+            <tr>
+              <th scope="row">East</th>
+              <td>60</td>
+              <td>80</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <figure>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/RGB_illumination.jpg/320px-RGB_illumination.jpg"
+          alt="Overlapping red, green, and blue circles of light, illustrating additive color mixing"
+          width="320" height="240" loading="lazy">
+        <figcaption>Additive color mixing (image loads only with an internet connection).</figcaption>
+      </figure>
+    </article>
+
+    <article id="contact">
+      <h2>Contact Form</h2>
+      <p>Try submitting this with an empty name field, or an invalid email — the browser blocks it natively, no JavaScript involved.</p>
+
+      <form action="#" method="post" onsubmit="return handleDemoSubmit(event)">
+        <label for="name">Name (required)</label>
+        <input type="text" id="name" name="name" required minlength="2" autocomplete="name">
+
+        <label for="email">Email (required, must be valid format)</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit" style="margin-top: 1rem;">Send</button>
+      </form>
+      <p id="form-result" role="status"></p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 HTML5 Demo. Part of Complete-Programming-Mastery / 02-Markup-and-Styling / 01-HTML5.</p>
+  </footer>
+
+  <script>
+    // The form's action="#" would normally submit to a server; this demo intercepts
+    // submission purely to show that validation already ran before this code executes.
+    function handleDemoSubmit(event) {
+      event.preventDefault();
+      document.getElementById('form-result').textContent =
+        'Form passed native browser validation and would now submit to a server.';
+      return false;
+    }
+  </script>
+
+</body>
+</html>

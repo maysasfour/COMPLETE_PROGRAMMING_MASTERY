@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS3 Demo — Flexbox, Grid, Variables, Dark Mode</title>
+  <link rel="stylesheet" href="example.css">
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Primary">
+    <strong>CSS3 Demo</strong>
+    <ul>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h1>Flexbox, Grid, and Custom Properties Together</h1>
+      <p>
+        The navbar above is a Flexbox row (<code>display: flex; justify-content: space-between</code>).
+        The cards below are a responsive Grid (<code>repeat(auto-fit, minmax(200px, 1fr))</code>) that
+        reflows automatically as you resize the window — try it. Hover a card to see a
+        <code>transform</code>-based lift, and toggle your OS/browser dark mode to see the
+        colors repaint via <code>prefers-color-scheme</code>, with zero JavaScript.
+      </p>
+    </section>
+
+    <section id="gallery">
+      <h2>Responsive Card Grid</h2>
+      <div class="gallery">
+        <div class="card">
+          <h3>Flexbox</h3>
+          <p>One-dimensional layout along a row or column. Ideal for navbars and button groups.</p>
+        </div>
+        <div class="card">
+          <h3>Grid</h3>
+          <p>Two-dimensional layout with explicit rows and columns. Ideal for whole-page layouts and galleries.</p>
+        </div>
+        <div class="card">
+          <h3>Custom Properties</h3>
+          <p>Runtime CSS variables that make theming, including dark mode, trivial to implement.</p>
+        </div>
+        <div class="card">
+          <h3>Transitions</h3>
+          <p>Animating <code>transform</code>/<code>opacity</code> keeps animations on the compositor thread.</p>
+        </div>
+        <div class="card">
+          <h3>Mobile-First</h3>
+          <p><code>min-width</code> media queries progressively enhance from a small-screen baseline.</p>
+        </div>
+        <div class="card">
+          <h3>Box Model</h3>
+          <p><code>box-sizing: border-box</code> makes declared width include padding and border.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

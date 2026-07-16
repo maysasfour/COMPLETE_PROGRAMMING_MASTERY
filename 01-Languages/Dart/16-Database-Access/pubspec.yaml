@@ -1,0 +1,5 @@
+name: database_access_lesson
+environment:
+  sdk: ^3.0.0
+dependencies:
+  sqlite3: ^2.4.0
