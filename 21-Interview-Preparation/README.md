@@ -37,3 +37,4 @@ Read each file as a rapid self-check: can you answer the question in your own wo
 Read 01 → 07 in order for a full pass, or jump directly to whichever category matches an upcoming interview's focus. Files 01-06 assume you've worked through (or are willing to jump back into) this repository's corresponding hands-on modules — they're designed to be a memory-jogging index, not a standalone substitute for the real, verified lessons they point to.
 
 **Previous module:** [20-Computer-Science-Fundamentals](../20-Computer-Science-Fundamentals/README.md)
+**Next module:** [22-Projects](../22-Projects/README.md)

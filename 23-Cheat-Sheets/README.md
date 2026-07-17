@@ -59,4 +59,4 @@ Skim the relevant cheat sheet for fast syntax recall during actual work, or as a
 
 `03-Frontend-Development` and `18-DevOps-and-Cloud` remain unbuilt in this repository as of this cheat-sheet pass (see [BUILD_STATUS.md](../BUILD_STATUS.md) for why) — no cheat sheet is included for either, to avoid referencing lessons that don't yet exist.
 
-**Previous module:** [21-Interview-Preparation](../21-Interview-Preparation/README.md)
+**Previous module:** [22-Projects](../22-Projects/README.md)

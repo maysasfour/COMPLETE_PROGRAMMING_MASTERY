@@ -213,9 +213,9 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 
 ## Projects
 
-- [ ] One Beginner project
-- [ ] One Intermediate project
-- [ ] One Advanced project
+- [x] One Beginner project (Task-Management-CRUD — vanilla HTML/CSS/JS)
+- [x] One Intermediate project (Library-Management-System — Spring Boot + JPA + H2 + Security + JWT)
+- [x] One Advanced project (Distributed-Order-Processing-System — two independent Spring Boot services over real HTTP, with a live-verified network-partition demo)
 
 ## Interview Preparation
 
