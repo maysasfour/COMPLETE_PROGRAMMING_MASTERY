@@ -104,12 +104,12 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 
 ## Frontend Development
 
-- [ ] DOM and browser events
-- [ ] Fetch API and HTTP from the browser
-- [ ] React
-- [ ] State management (Redux/Zustand)
-- [ ] Routing
-- [ ] Testing frontend code
+- [x] DOM and browser events (Lesson 04 — Events, Forms, and Lists)
+- [x] Fetch API and HTTP from the browser (Lesson 05 — Routing and Data Fetching, live jsonplaceholder.typicode.com; Mini-Project, live fakestoreapi.com)
+- [x] React (Lessons 01–07 core course, Lesson 08 Next.js, Mini-Project capstone)
+- [x] State management (Context + useReducer, Lesson 06 — Redux/Zustand not covered; Context+useReducer chosen as the built-in equivalent)
+- [x] Routing (react-router-dom in Lesson 05/Mini-Project; Next.js file-based routing in Lesson 08)
+- [x] Testing frontend code (Vitest + React Testing Library throughout; Lesson 07 makes the approach itself the subject)
 
 ## Backend Development
 

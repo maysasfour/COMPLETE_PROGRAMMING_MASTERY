@@ -79,4 +79,4 @@ Requires a JDK (this module was built and verified against JDK 25) and Apache Ma
 
 Work through 01 → 05 in order — each lesson builds directly on the previous one's code (Lesson 02 reimplements Lesson 01's API with a framework; Lesson 03 swaps Lesson 02's in-memory storage for a real database; Lesson 04 secures Lesson 03's API; Lesson 05 tests an API following the same shape). See also [07-Databases](../07-Databases/README.md) for SQL/database-design fundamentals underlying Lesson 03, and [14-APIs-and-Integrations](../14-APIs-and-Integrations/README.md) for API design/documentation topics beyond what this module covers.
 
-**Previous module:** [10-Functional-Programming](../10-Functional-Programming/README.md)
+**Previous module:** [03-Frontend-Development](../03-Frontend-Development/README.md)
