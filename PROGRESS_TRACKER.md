@@ -200,9 +200,9 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 
 ## Command Line and OS
 
-- [ ] Bash basics
-- [ ] PowerShell basics
-- [ ] File permissions and processes
+- [x] Bash basics
+- [x] PowerShell basics
+- [x] File permissions and processes
 
 ## Computer Science Fundamentals
 
