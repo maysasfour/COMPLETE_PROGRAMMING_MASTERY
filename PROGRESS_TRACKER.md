@@ -79,19 +79,19 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 
 ## Data Structures and Algorithms
 
-- [ ] Big O / Big Omega / Big Theta
-- [ ] Arrays and strings
-- [ ] Linked lists
-- [ ] Stacks and queues
-- [ ] Hash tables
-- [ ] Trees and BSTs
-- [ ] Heaps and priority queues
-- [ ] Graphs (BFS, DFS, shortest path)
-- [ ] Sorting algorithms
-- [ ] Searching algorithms
-- [ ] Recursion and backtracking
-- [ ] Dynamic programming
-- [ ] Greedy algorithms
+- [x] Big O / Big Omega / Big Theta
+- [x] Arrays and strings
+- [x] Linked lists
+- [x] Stacks and queues
+- [x] Hash tables
+- [x] Trees and BSTs (Lesson 09 — insert/search/delete, 4 traversal orders, a measured 999-vs-20 height blowup from insertion order)
+- [x] Heaps and priority queues (Lesson 10 — array-based min-heap, heapsort cross-checked against `heapq`, a priority-queue scheduler)
+- [x] Graphs (BFS, DFS, shortest path) (Lesson 11 — adjacency lists, BFS/DFS, directed/undirected cycle detection, Dijkstra's algorithm)
+- [x] Sorting algorithms
+- [x] Searching algorithms
+- [x] Recursion and backtracking
+- [x] Dynamic programming (Lesson 12 — coin change, LCS with reconstruction, 0/1 knapsack, cross-checked against brute force)
+- [x] Greedy algorithms (Lesson 13 — activity selection, fractional knapsack, and a real reproduced case where greedy coin change gives a wrong answer)
 
 ## Markup and Styling
 

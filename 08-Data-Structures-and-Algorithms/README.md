@@ -1,4 +1,4 @@
-# 08 — Data Structures and Algorithms (Introductory Module)
+# 08 — Data Structures and Algorithms
 
 [Back to repository root](../README.md)
 
@@ -6,7 +6,7 @@
 
 Data structures are ways of organizing data in memory so it can be accessed and modified efficiently. Algorithms are step-by-step procedures for solving a problem or transforming data. This module teaches both together, in Python, because a data structure without the algorithms that operate on it is just storage, and an algorithm without the right data structure is often slower than it needs to be.
 
-This is an **introductory, foundational pass**. It covers the building blocks every later, harder topic depends on: how to reason about efficiency, the linear structures (arrays, linked lists, stacks, queues), hashing, sorting, searching, and recursion. It deliberately stops before trees, heaps, graphs, dynamic programming, and greedy algorithms — those need the foundation built here first, and are listed below as clearly-marked stubs so you can see where the curriculum is headed without pretending they're already taught.
+The module is now **complete end to end**: complexity analysis, the linear structures (arrays, linked lists, stacks, queues), hashing, sorting, searching, and recursion (lessons 01–08, built in an earlier pass), followed by the non-linear structures and the two major algorithmic paradigms (trees, heaps, graphs, dynamic programming, and greedy algorithms — lessons 09–13, added in this pass).
 
 ## Why It Matters
 
@@ -33,8 +33,6 @@ Each lesson's README documents the exact expected output for its `implementation
 
 ## Table of Contents
 
-### Built this pass (full README + implementation + exercises + solutions)
-
 | # | Lesson | Covers |
 |---|--------|--------|
 | 01 | [Complexity Analysis](01-Complexity-Analysis/README.md) | Big O / Big Omega / Big Theta, best/average/worst case, empirical timing comparison |
@@ -45,19 +43,24 @@ Each lesson's README documents the exact expected output for its `implementation
 | 06 | [Sorting Algorithms](06-Sorting-Algorithms/README.md) | Bubble, selection, insertion, merge, quick sort — with verified dry-runs |
 | 07 | [Searching Algorithms](07-Searching-Algorithms/README.md) | Linear search, binary search (iterative + recursive), complexity comparison |
 | 08 | [Recursion](08-Recursion/README.md) | Base/recursive case, factorial, Fibonacci (naive vs. memoized), subset backtracking |
+| 09 | [Trees and Binary Search Trees](09-Trees-and-Binary-Search-Trees/README.md) | BST insert/search/delete (all 3 deletion cases), 4 traversal orders, a measured 999-vs-20 height blowup from insertion order alone |
+| 10 | [Heaps and Priority Queues](10-Heaps-and-Priority-Queues/README.md) | Array-based min-heap, sift-up/sift-down, heapsort (cross-checked against `heapq`), a priority-queue task scheduler |
+| 11 | [Graphs](11-Graphs/README.md) | Adjacency lists, BFS/DFS, directed vs. undirected cycle detection, Dijkstra's algorithm (reusing Lesson 10's heap) |
+| 12 | [Dynamic Programming](12-Dynamic-Programming/README.md) | Top-down memoization vs. bottom-up tabulation: coin change, longest common subsequence (with reconstruction), 0/1 knapsack |
+| 13 | [Greedy Algorithms](13-Greedy-Algorithms/README.md) | Activity selection, fractional knapsack, and a real, reproduced case where greedy coin change gives a confidently WRONG answer |
 
-### Planned, not yet built (structure only — see each folder's README for scope)
+## Verification Discipline (Lessons 09–13)
 
-| # | Lesson | Will cover |
-|---|--------|------------|
-| 09 | [Trees and Binary Search Trees](09-Trees-and-Binary-Search-Trees/README.md) | Planned — not yet implemented |
-| 10 | [Heaps and Priority Queues](10-Heaps-and-Priority-Queues/README.md) | Planned — not yet implemented |
-| 11 | [Graphs](11-Graphs/README.md) | Planned — not yet implemented |
-| 12 | [Dynamic Programming](12-Dynamic-Programming/README.md) | Planned — not yet implemented |
-| 13 | [Greedy Algorithms](13-Greedy-Algorithms/README.md) | Planned — not yet implemented |
+Every one of these five lessons' `implementation.py` files was actually run, with real output captured in that lesson's README — and three genuine bugs were found and fixed along the way, not smoothed over:
+
+- **Lesson 09**: inserting 1000 sorted values into a recursive BST hit Python's actual `RecursionError` — a real crash that IS the O(n)-degradation lesson, encountered directly rather than just described.
+- **Lesson 11**: `dfs_iterative` produced a genuinely different traversal order than `dfs_recursive` on the identical graph, caused by marking vertices visited at push-time instead of pop-time — caught by directly comparing their outputs, not assumed to match.
+- **Lesson 13**: greedy coin change was deliberately run against a non-canonical coin system (`[1,3,4]`, target 6) and produced a real wrong answer (3 coins) versus the DP-verified true optimum (2 coins) — the central, intentional demonstration of why greedy needs a correctness proof, not just intuition.
+
+A real Python module-naming collision (two different lessons both named `implementation.py`, imported from each other via `sys.path`) was also hit and fixed in Lessons 11 and 13, using `importlib.util.spec_from_file_location` with an explicit unique module name instead.
 
 ## Suggested Path
 
-Work through 01 → 08 in order. Lesson 01 (complexity analysis) is the vocabulary every later lesson uses to describe itself, so don't skip it even if it looks the most abstract. Budget 45–60 minutes per lesson including exercises.
+Work through 01 → 13 in order. Lesson 01 (complexity analysis) is the vocabulary every later lesson uses to describe itself, so don't skip it even if it looks the most abstract. Budget 45–60 minutes per lesson including exercises.
 
-**Next module (once built):** [09-Object-Oriented-Programming](../09-Object-Oriented-Programming/README.md)
+**Next module:** [02-Markup-and-Styling](../02-Markup-and-Styling/README.md) (per this repository's `ROADMAP.md` Phase 4 ordering — this module completes Phase 3)

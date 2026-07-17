@@ -151,4 +151,4 @@ count: 8 (expected 2**3 = 8)
 
 ## Suggested Next Lesson
 
-[09 — Trees and Binary Search Trees](../09-Trees-and-Binary-Search-Trees/README.md) *(currently a planned-scope stub — see that folder's README)*
+[09 — Trees and Binary Search Trees](../09-Trees-and-Binary-Search-Trees/README.md)
