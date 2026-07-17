@@ -30,25 +30,25 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 
 ## Programming Fundamentals
 
-- [ ] How computers execute programs
-- [ ] Variables, constants, and types
-- [ ] Static vs dynamic, strong vs weak typing
-- [ ] Operators and expressions
-- [ ] Conditions and loops
-- [ ] Functions, parameters, return values, scope
-- [ ] Closures and recursion
-- [ ] Error and exception handling
-- [ ] Stack vs heap, value vs reference semantics
-- [ ] Modules and dependency management
-- [ ] Concurrency, parallelism, async basics
+- [x] How computers execute programs
+- [x] Variables, constants, and types
+- [x] Static vs dynamic, strong vs weak typing
+- [x] Operators and expressions
+- [x] Conditions and loops
+- [x] Functions, parameters, return values, scope
+- [x] Closures and recursion
+- [x] Error and exception handling
+- [x] Stack vs heap, value vs reference semantics
+- [x] Modules and dependency management
+- [x] Concurrency, parallelism, async basics
 
 ## Languages
 
 - [x] Python (all 22 lessons, cheat sheet, mini-project)
-- [ ] JavaScript (core lessons 01-19 of 22 done: Setup through Best Practices — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
-- [ ] TypeScript (core lessons 01-19 of 22 done: Setup through Best Practices, including a full Generics lesson — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
+- [x] JavaScript (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a CLI Task Tracker using only Node built-ins, node:sqlite-backed, 13/13 tests passing)
+- [x] TypeScript (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a CLI Task Tracker using node:sqlite, 10/10 tests passing)
 - [x] Java (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a CLI Expense Tracker with Maven, JDBC/SQLite, and JUnit 5)
-- [ ] C# (core lessons 01-19 of 22 done: Setup through Best Practices — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
+- [x] C# (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a SQLite-backed CLI Task Tracker with an xUnit test project, 10/10 tests passing)
 - [ ] C++ (core lessons 01-19 of 22 done: Setup through Best Practices — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
 - [ ] C
 - [ ] Go (core lessons 01-19 of 22 done: Setup through Best Practices — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
@@ -61,13 +61,13 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 
 ## Object-Oriented Programming
 
-- [ ] Classes, objects, constructors
-- [ ] Encapsulation
-- [ ] Inheritance
-- [ ] Polymorphism (overloading + overriding)
-- [ ] Abstraction (interfaces, abstract classes)
-- [ ] Composition over inheritance
-- [ ] Generics
+- [x] Classes, objects, constructors
+- [x] Encapsulation
+- [x] Inheritance
+- [x] Polymorphism (overloading + overriding)
+- [x] Abstraction (interfaces, abstract classes)
+- [x] Composition over inheritance
+- [x] Generics
 
 ## Functional Programming
 

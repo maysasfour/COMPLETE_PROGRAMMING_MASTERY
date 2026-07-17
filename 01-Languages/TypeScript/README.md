@@ -132,10 +132,12 @@ No `npm install` beyond `typescript` itself is needed for any lesson in this cou
 | 17 | [API Integration](17-API-Integration/README.md) | Typed + validated `fetch()`, the boundary-validation pattern applied a third time |
 | 18 | [Testing](18-Testing/README.md) | `node:test` from TypeScript, `TestContext` typing, a real compile-then-run gotcha |
 | 19 | [Best Practices](19-Best-Practices/README.md) | A synthesis checklist across lessons 01–18, boundary validation as the core recurring theme |
-| 20-22 | Exercises / Solutions / Mini-Projects | *not yet built as standalone folders — see per-lesson Exercises/Solutions on 05-07* |
+| 20 | [Exercises](20-Exercises/README.md) | 7 standalone problems: generic `pluck`, discriminated `Shape` union, `Result<T,E>` validation pipeline, `Partial`/`Pick`/`Omit` patch API, generic `InMemoryRepository<T>`, `Record`-typed RBAC matrix, generic event bus |
+| 21 | [Solutions](21-Solutions/README.md) | Verified, compiled-and-run solutions for all 7 exercises |
+| 22 | [Mini Projects](22-Mini-Projects/README.md) | A complete CLI Task Tracker: `node:sqlite`-backed, typed + validated data-access layer, `node:test` suite |
 
 ## Suggested Path
 
-Work through 01 → 19 in order — each lesson assumes both the previous TypeScript lessons and [01-Languages/JavaScript](../JavaScript/README.md) lessons 01–08. Lessons 05, 06, and 07 each have an `Exercises/`/`Solutions/` pair; attempt each exercise before checking the solution. Lessons 20–22 (a standalone exercise bank and mini-projects) are not yet built (see [BUILD_STATUS.md](../../BUILD_STATUS.md) for the honest current state) — the core course (01–19) now matches the lesson count and depth of both [Python](../Python/README.md) and [JavaScript](../JavaScript/README.md).
+Work through 01 → 19 in order — each lesson assumes both the previous TypeScript lessons and [01-Languages/JavaScript](../JavaScript/README.md) lessons 01–08. Lessons 05, 06, and 07 each have an `Exercises/`/`Solutions/` pair; attempt each exercise before checking the solution. Then [20-Exercises](20-Exercises/README.md) → [21-Solutions](21-Solutions/README.md) → [22-Mini-Projects](22-Mini-Projects/README.md) round out the course with cross-cutting practice and one complete application, matching the lesson count and depth of both [Python](../Python/README.md) and [JavaScript](../JavaScript/README.md) end to end.
 
 **Previous language:** [JavaScript](../JavaScript/README.md) | **Next:** [03-Frontend-Development](../../03-Frontend-Development/) or [04-Backend-Development](../../04-Backend-Development/), both of which have first-class TypeScript support.

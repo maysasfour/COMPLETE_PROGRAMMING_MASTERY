@@ -74,7 +74,7 @@ Lessons with an `Exercises/`/`Solutions/` folder work the same way — read the 
 node Solutions/solution-01.js
 ```
 
-No `npm install` is needed for **any** lesson in this course (01–19) — everything uses only built-in JavaScript and built-in Node core modules (`node:fs`, `node:sqlite`, global `fetch`, `node:test`), deliberately avoiding third-party dependencies like axios, better-sqlite3, or Jest so the course has zero install friction. Lesson 18's tests run with:
+No `npm install` is needed for **any** lesson in this course (01–22) — everything uses only built-in JavaScript and built-in Node core modules (`node:fs`, `node:sqlite`, global `fetch`, `node:test`), deliberately avoiding third-party dependencies like axios, better-sqlite3, or Jest so the course has zero install friction, all the way through the Lesson 22 mini-project. Lesson 18's tests run with:
 
 ```bash
 cd 01-Languages/JavaScript/18-Testing
@@ -150,12 +150,14 @@ Lesson 17's example makes a real network call to a public test API and requires 
 | 17 | [API Integration](17-API-Integration/README.md) | Built-in `fetch`, the `response.ok` trap, real calls against a public test API |
 | 18 | [Testing](18-Testing/README.md) | `node:test` + `assert/strict`, testing thrown errors, subtests |
 | 19 | [Best Practices](19-Best-Practices/README.md) | A synthesis checklist across lessons 01–18, ESLint/Prettier's role |
-| 20-22 | Exercises / Solutions / Mini-Projects | *not yet built as standalone folders — see per-lesson Exercises/Solutions on 05-09 through 14* |
+| 20 | [Exercises](20-Exercises/README.md) | 8 standalone practice problems spanning the whole course |
+| 21 | [Solutions](21-Solutions/README.md) | Matching, verified solutions for every Lesson 20 problem |
+| 22 | [Mini Projects](22-Mini-Projects/README.md) | A complete `node:sqlite`-backed CLI Task Tracker with a `node:test` suite |
 
 Also see: [CHEAT-SHEET.md](CHEAT-SHEET.md) for a dense one-page syntax reference.
 
 ## Suggested Path
 
-Work through 01 → 19 in order — each lesson assumes the previous ones. Lessons 05–09 and 14 each have an `Exercises/`/`Solutions/` pair; attempt each exercise before checking the solution. Lessons 20–22 (a standalone exercise bank, and mini-projects) are not yet built (see [BUILD_STATUS.md](../../BUILD_STATUS.md) for the honest current state) — the core course (01–19) now matches the lesson count and depth of [01-Languages/Python](../Python/README.md).
+Work through 01 → 22 in order — each lesson assumes the previous ones. Lessons 05–09 and 14 each have an `Exercises/`/`Solutions/` pair; attempt each exercise before checking the solution. Lesson 20 is a second, standalone cross-cutting exercise bank (distinct from those per-lesson ones) with its own [21-Solutions](21-Solutions/README.md), and [22-Mini-Projects](22-Mini-Projects/README.md) closes out the course with a full CLI application — the course now matches the lesson count, depth, and 20–22 structure of [01-Languages/Python](../Python/README.md) and [01-Languages/Java](../Java/README.md).
 
 **Previous module:** [Python](../Python/README.md) | **Next:** [03-Frontend-Development](../../03-Frontend-Development/) (once you're comfortable with 01-08, browser JavaScript and the DOM build directly on this).

@@ -92,12 +92,14 @@ Lessons 16 (Database Access) and 18 (Testing) use small dedicated project folder
 | 17 | [API Integration](17-API-Integration/README.md) | `HttpClient`, JSON deserialization |
 | 18 | [Testing](18-Testing/README.md) | xUnit basics |
 | 19 | [Best Practices](19-Best-Practices/README.md) | Synthesis checklist across lessons 01–18 |
-| 20-22 | Exercises / Solutions / Mini-Projects | *not yet built as standalone folders — see per-lesson Exercises/Solutions on 05-07* |
+| 20 | [Exercises](20-Exercises/README.md) | 7 standalone practice problems spanning the whole course |
+| 21 | [Solutions](21-Solutions/README.md) | Verified, runnable solutions for every Lesson 20 exercise |
+| 22 | [Mini Projects](22-Mini-Projects/README.md) | CLI Task Tracker — SQLite persistence, multi-project solution, xUnit tests |
 
 Also see: [CHEAT-SHEET.md](CHEAT-SHEET.md).
 
 ## Suggested Path
 
-Work through 01 → 19 in order. Lessons 05, 06, and 07 have `Exercises/`/`Solutions/` pairs.
+Work through 01 → 22 in order. Lessons 05, 06, and 07 have `Exercises/`/`Solutions/` pairs; Lessons 20-22 are standalone, course-wide capstone material.
 
 **Previous language:** [TypeScript](../TypeScript/README.md) | **Next:** [Java](../Java/README.md)
