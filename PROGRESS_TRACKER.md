@@ -206,10 +206,10 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 
 ## Computer Science Fundamentals
 
-- [ ] Binary/hex, boolean logic
-- [ ] Networking (TCP/IP, DNS, HTTP)
-- [ ] OS fundamentals (processes, threads, scheduling)
-- [ ] CAP theorem and distributed systems basics
+- [x] Binary/hex, boolean logic
+- [x] Networking (TCP/IP, DNS, HTTP)
+- [x] OS fundamentals (processes, threads, scheduling)
+- [x] CAP theorem and distributed systems basics
 
 ## Projects
 
@@ -219,10 +219,10 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 
 ## Interview Preparation
 
-- [ ] Programming fundamentals questions
-- [ ] OOP questions
-- [ ] DSA questions
-- [ ] SQL/database questions
-- [ ] Web development questions
-- [ ] System design questions
-- [ ] Behavioral questions
+- [x] Programming fundamentals questions
+- [x] OOP questions
+- [x] DSA questions
+- [x] SQL/database questions
+- [x] Web development questions
+- [x] System design questions
+- [x] Behavioral questions
