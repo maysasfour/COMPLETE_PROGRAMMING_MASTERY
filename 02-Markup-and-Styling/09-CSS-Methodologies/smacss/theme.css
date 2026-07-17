@@ -1,0 +1,15 @@
+/* SMACSS Category 5: THEME -- swappable visual variations layered on top of
+   a module's base structure, kept in its OWN file specifically so an entire
+   theme could be swapped out (a different theme.css) without touching
+   module.css's structural rules at all. */
+.theme-success {
+  background: #dcfce7;
+  border-color: #16a34a;
+  color: #14532d;
+}
+
+.theme-error {
+  background: #fee2e2;
+  border-color: #dc2626;
+  color: #7f1d1d;
+}

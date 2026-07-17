@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><title>SMACSS</title>
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="layout.css">
+<link rel="stylesheet" href="module.css">
+<link rel="stylesheet" href="state.css">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <div class="l-stack">
+    <div class="alert theme-success">
+      <p class="alert-title">Success</p>
+      <p>Your changes were saved.</p>
+    </div>
+    <div class="alert theme-error is-highlighted">
+      <p class="alert-title">Error (highlighted state)</p>
+      <p>Something went wrong.</p>
+    </div>
+    <div class="alert theme-success is-dismissed">
+      <p class="alert-title">Dismissed (hidden via state class)</p>
+    </div>
+  </div>
+</body>
+</html>

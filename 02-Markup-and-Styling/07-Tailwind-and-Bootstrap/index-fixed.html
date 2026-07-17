@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tailwind vs Bootstrap (cascade-layers fix)</title>
+<!-- Only ONE stylesheet now -- dist/output-fixed.css itself @imports Bootstrap
+     INTO an explicit, lower-priority "bootstrap" layer (see src/input-fixed.css) -->
+<link rel="stylesheet" href="dist/output-fixed.css">
+<style>
+  body { display: flex; gap: 2rem; padding: 2rem; font-family: sans-serif; }
+</style>
+</head>
+<body>
+
+  <div id="tailwind-card" class="rounded-lg border border-gray-300 p-6 shadow-md max-w-xs">
+    <h2 class="text-xl font-bold text-indigo-600 mb-2">Tailwind Card (should be indigo now)</h2>
+    <p class="text-gray-600 mb-4">Fixed: Bootstrap is now explicitly layered BELOW Tailwind.</p>
+    <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Action</button>
+  </div>
+
+  <div id="bootstrap-card" class="card" style="max-width: 20rem;">
+    <div class="card-body">
+      <h2 class="card-title h5 text-primary">Bootstrap Card (still works fine)</h2>
+      <p class="card-text text-secondary">Bootstrap's OWN classes are unaffected by the layer fix.</p>
+      <button class="btn btn-primary">Action</button>
+    </div>
+  </div>
+
+</body>
+</html>

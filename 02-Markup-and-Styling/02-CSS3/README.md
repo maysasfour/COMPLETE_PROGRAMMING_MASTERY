@@ -232,4 +232,4 @@ See [Solutions/](Solutions/).
 
 ## Recommended Next Lesson
 
-The full spec for this module lists CSS methodologies (BEM/OOCSS/SMACSS), preprocessors (Sass/Less), and frameworks (Tailwind/Bootstrap) next — not yet built (see the module [README](../README.md)). Until then, continue to [03-Frontend-Development](../../03-Frontend-Development/) to start applying HTML/CSS with browser JavaScript.
+[03 — Data Formats: XML, JSON, and YAML](../03-Data-Formats-XML-JSON-YAML/README.md)

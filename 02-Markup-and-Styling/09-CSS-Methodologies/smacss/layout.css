@@ -1,0 +1,7 @@
+/* SMACSS Category 2: LAYOUT -- major page regions, prefixed "l-" by
+   convention to visually distinguish from modules at a glance. */
+.l-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

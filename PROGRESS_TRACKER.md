@@ -47,7 +47,7 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 - [x] Python (all 22 lessons, cheat sheet, mini-project)
 - [ ] JavaScript (core lessons 01-19 of 22 done: Setup through Best Practices — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
 - [ ] TypeScript (core lessons 01-19 of 22 done: Setup through Best Practices, including a full Generics lesson — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
-- [ ] Java (core lessons 01-19 of 22 done: Setup through Best Practices — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
+- [x] Java (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a CLI Expense Tracker with Maven, JDBC/SQLite, and JUnit 5)
 - [ ] C# (core lessons 01-19 of 22 done: Setup through Best Practices — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
 - [ ] C++ (core lessons 01-19 of 22 done: Setup through Best Practices — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
 - [ ] C
@@ -98,8 +98,14 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 - [x] HTML5 semantics
 - [x] CSS3 (Flexbox, Grid)
 - [x] Responsive and mobile-first design
-- [ ] Sass/SCSS
-- [ ] Tailwind CSS
+- [x] Data formats: XML, JSON, YAML (Lesson 03 — including a real, reproduced YAML "Norway problem")
+- [x] Markdown (Lesson 04 — CommonMark vs. GFM, a real un-rendered-table bug found and fixed)
+- [x] SVG (Lesson 05 — real browser-verified inline-vs-img CSS isolation proof)
+- [x] Sass/SCSS/Less (Lesson 06 — real compiled output, a genuine `@import` deprecation warning)
+- [x] Tailwind CSS (Lesson 07 — including a genuine CSS-cascade-layers interop bug with Bootstrap, found and fixed)
+- [x] Bootstrap (Lesson 07, alongside Tailwind — utility-first vs. component-based comparison)
+- [x] Material Design (Lesson 08 — elevation, type scale, 8dp grid, ripple interaction, all verified programmatically/in-browser)
+- [x] CSS methodologies: BEM, OOCSS, SMACSS, CSS Modules, CSS-in-JS (Lesson 09 — real proof CSS Modules/CSS-in-JS prevent naming collisions)
 - [x] Accessibility basics (skip links, label/input pairing, landmarks — covered within the HTML5/CSS3 lessons, not a standalone lesson yet)
 
 ## Frontend Development

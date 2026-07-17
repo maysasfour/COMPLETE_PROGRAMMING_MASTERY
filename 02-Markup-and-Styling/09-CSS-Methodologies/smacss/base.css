@@ -1,0 +1,4 @@
+/* SMACSS Category 1: BASE -- default element styles, no classes, applied
+   globally (resets, defaults). Never combined with layout/module rules. */
+body { font-family: sans-serif; margin: 0; padding: 16px; }
+p { margin: 0; }

@@ -75,4 +75,4 @@ No new terms — this lesson synthesizes concepts from Lessons 03, 04, 09, 11, a
 
 ## Recommended Next Lesson
 
-This completes the core Java course (lessons 01–19), matching the depth of Python, JavaScript, TypeScript, and C#. Lessons 20–22 (Exercises, Solutions, Mini-Projects as standalone folders) are not yet built — see [BUILD_STATUS.md](../../../BUILD_STATUS.md). From here, continue to [C++](../../Cpp/README.md) (per this repository's specified language order) or [04-Backend-Development](../../../04-Backend-Development/) (Spring Boot).
+This completes the core Java course (lessons 01–19), matching the depth of Python, JavaScript, TypeScript, and C#. Continue to [20-Exercises](../20-Exercises/README.md) for 7 standalone cross-cutting practice problems, then [21-Solutions](../21-Solutions/README.md) and the [22-Mini-Projects](../22-Mini-Projects/README.md) CLI Expense Tracker. From there, continue to [C++](../../Cpp/README.md) (per this repository's specified language order) or [04-Backend-Development](../../../04-Backend-Development/) (Spring Boot).

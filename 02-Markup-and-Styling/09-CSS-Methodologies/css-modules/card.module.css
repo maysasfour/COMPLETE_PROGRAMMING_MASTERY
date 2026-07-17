@@ -1,0 +1,14 @@
+/* A COMPLETELY UNRELATED component, deliberately also using the class name
+   ".title" -- in plain global CSS, this would be a real naming collision
+   (whichever rule loads last would win everywhere, for BOTH components).
+   With CSS Modules, it isn't, verified directly in build.mjs. */
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.title {
+  font-size: 1.1rem;
+  color: #4f46e5;
+}

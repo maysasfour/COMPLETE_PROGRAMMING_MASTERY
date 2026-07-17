@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tailwind vs Bootstrap</title>
+<link rel="stylesheet" href="dist/output.css">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<style>
+  body { display: flex; gap: 2rem; padding: 2rem; font-family: sans-serif; }
+</style>
+</head>
+<body>
+
+  <!-- UTILITY-FIRST (Tailwind): every visual decision is a class, composed
+       directly in the markup -- no separate "card" class or stylesheet rule
+       to maintain; the classes ARE the styling. -->
+  <div id="tailwind-card" class="rounded-lg border border-gray-300 p-6 shadow-md max-w-xs">
+    <h2 class="text-xl font-bold text-indigo-600 mb-2">Tailwind Card</h2>
+    <p class="text-gray-600 mb-4">Utility-first: styled entirely with composed classes, no custom CSS written.</p>
+    <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Action</button>
+  </div>
+
+  <!-- COMPONENT-BASED (Bootstrap): a small number of semantic, pre-styled
+       component classes (.card, .btn, .btn-primary) do most of the visual
+       work -- less markup-level composition, but less granular control
+       without writing custom overriding CSS. -->
+  <div id="bootstrap-card" class="card" style="max-width: 20rem;">
+    <div class="card-body">
+      <h2 class="card-title h5 text-primary">Bootstrap Card</h2>
+      <p class="card-text text-secondary">Component-based: a handful of pre-styled classes do most of the work.</p>
+      <button class="btn btn-primary">Action</button>
+    </div>
+  </div>
+
+  <!-- The gotcha demo: a DYNAMICALLY constructed class name Tailwind's
+       content scanner cannot see as a literal string, vs. an equivalent
+       FULLY STATIC class name it can. -->
+  <div id="dynamic-gotcha">
+    <p id="dynamic-broken" class="">Dynamic (broken): should be purple text</p>
+    <p id="dynamic-fixed" class="text-emerald-600">Static (works): emerald text</p>
+  </div>
+  <script>
+    // A common real mistake: constructing a Tailwind class name at runtime
+    // by joining a color name and shade number. Tailwind's build-time
+    // scanner looks for literal, COMPLETE class-name strings anywhere in
+    // scanned source files -- it has no JavaScript semantics at all, so it
+    // cannot execute this code to discover what the concatenated result
+    // will be at runtime; the class the browser ends up applying to the
+    // element was never generated as a real CSS rule at all.
+    //
+    // A genuinely real thing discovered while building THIS exact demo,
+    // worth reporting rather than hiding: the full target class name was
+    // ONCE spelled out literally in this very comment block, for explanatory
+    // purposes -- and because the scanner has no concept of "this is a
+    // comment, ignore it," that literal mention alone was enough to make
+    // Tailwind generate the CSS rule anyway, silently defeating the demo.
+    // See this lesson's README for the fix and what it proves about how the
+    // scanner actually works (pure text matching, zero code understanding).
+    const color = "purple";
+    const shade = "600";
+    document.getElementById("dynamic-broken").className = `text-${color}-${shade}`;
+  </script>
+
+</body>
+</html>

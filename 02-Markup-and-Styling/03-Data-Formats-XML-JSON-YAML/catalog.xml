@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <book id="bk101" inStock="true">
+    <title>The Pragmatic Programmer</title>
+    <author>David Thomas</author>
+    <price currency="USD">39.95</price>
+  </book>
+  <book id="bk102" inStock="false">
+    <title>Clean Code</title>
+    <author>Robert C. Martin</author>
+    <price currency="USD">34.99</price>
+  </book>
+</catalog>

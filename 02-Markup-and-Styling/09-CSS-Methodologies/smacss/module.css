@@ -1,0 +1,12 @@
+/* SMACSS Category 3: MODULE -- reusable, self-contained components (the
+   actual "alert" component structure), independent of page layout. */
+.alert {
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid transparent;
+}
+
+.alert-title {
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}

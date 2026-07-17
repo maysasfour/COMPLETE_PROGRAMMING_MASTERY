@@ -1,0 +1,11 @@
+/* SMACSS Category 4: STATE -- describes how a module looks in a particular
+   STATE, prefixed "is-" by convention. Deliberately SEPARATE from the
+   module's own base appearance (module.css), and often toggled by
+   JavaScript at runtime, unlike the other categories. */
+.is-dismissed {
+  display: none;
+}
+
+.is-highlighted {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15);
+}

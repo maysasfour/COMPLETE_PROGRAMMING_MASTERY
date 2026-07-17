@@ -1,0 +1,90 @@
+/* Material Design's color system: a small set of named roles (primary,
+   secondary, surface, error) rather than arbitrary named colors -- every
+   component references a ROLE, so a theme change only ever requires editing
+   these custom properties, not hunting down every hardcoded color. */
+:root {
+  --md-primary: #6750a4;
+  --md-secondary: #625b71;
+  --md-surface: #fffbfe;
+  --md-on-surface: #1c1b1f;
+  --md-error: #b3261e;
+
+  /* The 8dp grid: EVERY spacing value used anywhere in this file is a
+     multiple of this one base unit -- verified programmatically in
+     implementation.py, not just asserted here. */
+  --md-space-1: 8px;
+  --md-space-2: 16px;
+  --md-space-3: 24px;
+  --md-space-4: 32px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background: #f5f5f5;
+  padding: var(--md-space-4);
+  display: flex;
+  gap: var(--md-space-3);
+  flex-wrap: wrap;
+}
+
+/* Material's ELEVATION system: real-world paper-stack shadows, each level
+   (measured in "dp", density-independent pixels) mapped to a progressively
+   larger/softer box-shadow -- higher elevation reads as "closer to the
+   viewer," used to communicate hierarchy (a dialog floats above a card,
+   which floats above the page background). */
+.elevation-1 { box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 1px 3px 1px rgba(0,0,0,0.15); }
+.elevation-2 { box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 2px 6px 2px rgba(0,0,0,0.15); }
+.elevation-3 { box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 4px 8px 3px rgba(0,0,0,0.15); }
+.elevation-4 { box-shadow: 0 2px 3px rgba(0,0,0,0.3), 0 6px 10px 4px rgba(0,0,0,0.15); }
+
+.card {
+  background: var(--md-surface);
+  color: var(--md-on-surface);
+  border-radius: 12px;
+  padding: var(--md-space-3);
+  width: 240px;
+}
+
+.card h3 {
+  margin: 0 0 var(--md-space-1) 0;
+}
+
+/* Material's TYPE SCALE: a small, fixed set of named text styles (not
+   arbitrary font-sizes chosen per-component) -- this is the same underlying
+   idea as the color-role system above, applied to typography. */
+.md-headline { font-size: 24px; font-weight: 400; line-height: 32px; }
+.md-body     { font-size: 14px; font-weight: 400; line-height: 20px; }
+.md-label    { font-size: 11px; font-weight: 500; line-height: 16px; letter-spacing: 0.5px; text-transform: uppercase; }
+
+.md-button {
+  position: relative;
+  overflow: hidden; /* clips the ripple span to the button's own bounds */
+  background: var(--md-primary);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: var(--md-space-1) var(--md-space-3);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* The RIPPLE interaction: a real Material Design signature -- a circular
+   wave expanding from the exact point clicked, giving tactile feedback that
+   a touch/click was registered. Implemented here with plain CSS + a few
+   lines of JS (see ripple.js), not a component library. */
+.md-ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(0);
+  animation: md-ripple-effect 500ms ease-out;
+  pointer-events: none;
+}
+
+@keyframes md-ripple-effect {
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}

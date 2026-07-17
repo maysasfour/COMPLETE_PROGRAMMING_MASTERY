@@ -1,0 +1,31 @@
+/* BEM: Block__Element--Modifier. Every class name is a single, FLAT,
+   low-specificity selector -- no nesting, no descendant combinators (see
+   Lesson 06's nesting-specificity discussion) -- specificity stays uniformly
+   low across the whole file, so nothing ever needs an override war. */
+
+.alert {
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid transparent;
+}
+
+.alert__title {
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.alert__message {
+  margin: 0;
+}
+
+.alert--success {
+  background: #dcfce7;
+  border-color: #16a34a;
+  color: #14532d;
+}
+
+.alert--error {
+  background: #fee2e2;
+  border-color: #dc2626;
+  color: #7f1d1d;
+}

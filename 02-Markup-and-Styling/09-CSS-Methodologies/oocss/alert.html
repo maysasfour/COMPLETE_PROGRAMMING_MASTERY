@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>OOCSS</title><link rel="stylesheet" href="alert.css"></head>
+<body>
+  <!-- Structure (.obj-box) and skin (.skin-success) are two INDEPENDENT
+       classes composed together -- neither one knows the other exists. -->
+  <div class="obj-box skin-success">
+    <p class="obj-box-title">Success</p>
+    <p class="obj-box-message">Your changes were saved.</p>
+  </div>
+  <div class="obj-box skin-error">
+    <p class="obj-box-title">Error</p>
+    <p class="obj-box-message">Something went wrong.</p>
+  </div>
+
+  <!-- Proving reuse: the SAME skin-success class, on a completely different
+       structural element (a button, not an .obj-box at all). -->
+  <button class="skin-success" style="border-radius: 20px; padding: 8px 16px; margin-top: 16px;">
+    A button reusing the SAME skin class
+  </button>
+</body>
+</html>

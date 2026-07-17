@@ -1,0 +1,37 @@
+/* OOCSS: Object-Oriented CSS. Core principle #1 -- SEPARATE STRUCTURE FROM
+   SKIN: a "structure" class defines box-model/layout (reusable across ANY
+   visual theme), a "skin" class defines only colors/borders (reusable
+   across ANY structural context). The alert component below and a
+   completely unrelated "card" component could both reuse .skin-success
+   without either one depending on the other's structure at all. */
+
+/* STRUCTURE: reusable regardless of skin */
+.obj-box {
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid transparent;
+}
+
+.obj-box-title {
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.obj-box-message {
+  margin: 0;
+}
+
+/* SKIN: reusable regardless of structure -- notice these classes make NO
+   reference to "alert" at all; they are pure color/border theming, and
+   could equally be applied to a button, a badge, or a card. */
+.skin-success {
+  background: #dcfce7;
+  border-color: #16a34a;
+  color: #14532d;
+}
+
+.skin-error {
+  background: #fee2e2;
+  border-color: #dc2626;
+  color: #7f1d1d;
+}

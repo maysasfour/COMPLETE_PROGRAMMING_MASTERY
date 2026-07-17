@@ -1,0 +1,21 @@
+/* CSS Modules: this file is processed at BUILD TIME (see build.mjs), and
+   every class name below is rewritten to a unique, scoped identifier --
+   ".title" here can NEVER collide with an unrelated ".title" class defined
+   in a completely different .module.css file, because each file's classes
+   get their own unique generated names, verified directly in build.mjs. */
+._alert_dmm50_6 {
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid transparent;
+}
+
+._title_dmm50_3 {
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+._success_dmm50_17 {
+  background: #dcfce7;
+  border-color: #16a34a;
+  color: #14532d;
+}

@@ -1,0 +1,21 @@
+catalog:
+  books:
+    - id: bk101
+      inStock: true
+      title: The Pragmatic Programmer
+      author: David Thomas
+      price:
+        amount: 39.95
+        currency: USD
+      # Deliberately included to demonstrate a real, famous YAML gotcha (see
+      # this lesson's README): an unquoted "NO" here is NOT the string "NO" --
+      # PyYAML's default (YAML 1.1) loader parses it as the boolean False.
+      shipsFrom: NO
+    - id: bk102
+      inStock: false
+      title: Clean Code
+      author: Robert C. Martin
+      price:
+        amount: 34.99
+        currency: USD
+      shipsFrom: "NO"

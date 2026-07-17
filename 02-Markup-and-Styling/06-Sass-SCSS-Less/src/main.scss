@@ -1,0 +1,27 @@
+// Modern Sass module system: @use loads a partial ONCE (no matter how many
+// files @use it), namespaced (vars.$primary-color, not a bare global variable)
+// -- this is the direct fix for @import's real problems, demonstrated below.
+@use "variables" as vars;
+@use "mixins";
+
+.card {
+  border: 1px solid #e5e7eb;
+  padding: vars.$spacing-unit * 2;
+  border-radius: 8px;
+
+  // Nesting: compiles to a real ".card .card__title" descendant selector --
+  // convenient, but see this lesson's README for the real specificity/output-size
+  // cost of nesting too deeply.
+  &__title {
+    color: vars.$primary-color;
+    font-size: 1.25rem;
+  }
+
+  &__button {
+    @include mixins.button-base;
+  }
+
+  &__button--danger {
+    @include mixins.button-base($bg-color: #dc2626);
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "catalog": {
+    "books": [
+      {
+        "id": "bk101",
+        "inStock": true,
+        "title": "The Pragmatic Programmer",
+        "author": "David Thomas",
+        "price": { "amount": 39.95, "currency": "USD" }
+      },
+      {
+        "id": "bk102",
+        "inStock": false,
+        "title": "Clean Code",
+        "author": "Robert C. Martin",
+        "price": { "amount": 34.99, "currency": "USD" }
+      }
+    ]
+  }
+}

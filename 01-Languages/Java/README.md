@@ -95,12 +95,14 @@ For lessons needing a real multi-file/build-tool project (16-Database-Access nee
 | 17 | [API Integration](17-API-Integration/README.md) | `java.net.http.HttpClient`, JSON |
 | 18 | [Testing](18-Testing/README.md) | JUnit 5 basics |
 | 19 | [Best Practices](19-Best-Practices/README.md) | Synthesis checklist across lessons 01–18 |
-| 20-22 | Exercises / Solutions / Mini-Projects | *not yet built as standalone folders — see per-lesson Exercises/Solutions on 05-07* |
+| 20 | [Exercises](20-Exercises/README.md) | 7 standalone practice problems spanning the whole course |
+| 21 | [Solutions](21-Solutions/README.md) | Verified solutions to all 7, including a JDBC/SQLite inventory system |
+| 22 | [Mini Projects](22-Mini-Projects/README.md) | A complete CLI Expense Tracker — Maven, JDBC/SQLite, custom exceptions, JUnit 5 |
 
 Also see: [CHEAT-SHEET.md](CHEAT-SHEET.md).
 
 ## Suggested Path
 
-Work through 01 → 19 in order. Lessons 05, 06, and 07 have `Exercises/`/`Solutions/` pairs.
+Work through 01 → 22 in order. Lessons 05, 06, and 07 have their own `Exercises/`/`Solutions/` pairs in addition to the cross-cutting 20-22 sequence.
 
 **Previous language:** [C#](../CSharp/README.md) | **Next:** [C++](../Cpp/README.md)

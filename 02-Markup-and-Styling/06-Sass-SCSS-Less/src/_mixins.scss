@@ -1,0 +1,14 @@
+@use "variables" as vars;
+
+@mixin button-base($bg-color: vars.$primary-color) {
+  background-color: $bg-color;
+  padding: vars.$spacing-unit vars.$spacing-unit * 2;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "07-tailwind-and-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i src/input.css -o dist/output.css && tailwindcss -i src/input-fixed.css -o dist/output-fixed.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}

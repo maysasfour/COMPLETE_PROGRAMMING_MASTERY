@@ -1,0 +1,7 @@
+// The OLD way (pre-2019 Sass) -- @import, not @use. Kept here specifically
+// to demonstrate a real deprecation warning, not to recommend this style.
+@import "variables";
+
+.legacy-example {
+  color: $primary-color;
+}

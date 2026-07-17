@@ -1,0 +1,11 @@
+/* The FIX for the cascade-layers conflict documented in this lesson's README:
+   explicitly reserve the "bootstrap" layer's position FIRST (declaring it
+   lowest-priority), THEN import Tailwind -- since a layer's priority is
+   fixed by the ORDER its name is first mentioned, not by source order of its
+   actual rules, this makes Tailwind's own layers (theme/base/components/
+   utilities) win over Bootstrap's now-layered rules, restoring the normal
+   specificity-based cascade instead of "whichever framework happens to be
+   unlayered auto-wins everything." */
+@layer bootstrap;
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css" layer(bootstrap);
+@import "tailwindcss";
