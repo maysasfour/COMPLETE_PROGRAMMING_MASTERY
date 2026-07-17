@@ -123,7 +123,7 @@ Complete-Programming-Mastery/
 ├── 15-Testing-and-Debugging/          Unit/integration/e2e testing, TDD, debugging
 ├── 16-Security/                       OWASP Top 10, secure coding
 ├── 17-Git-and-GitHub/                 Git commands, branching, GitHub Actions
-├── 18-DevOps-and-Cloud/               Docker, Kubernetes fundamentals, CI/CD, cloud deploys
+├── 18-DevOps-and-Cloud/               CI/CD, Terraform, nginx load balancing, Prometheus, cloud fundamentals (no Docker in this environment)
 ├── 19-Command-Line-and-Operating-Systems/  Bash, PowerShell, Linux, processes
 ├── 20-Computer-Science-Fundamentals/  Binary, networking, OS theory, distributed systems
 ├── 21-Interview-Preparation/          Categorized interview Q&A

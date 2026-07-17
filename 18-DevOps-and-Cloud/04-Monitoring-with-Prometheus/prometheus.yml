@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 2s # aggressive for this lesson so results appear quickly, not production-realistic
+
+scrape_configs:
+  - job_name: "sample-app"
+    static_configs:
+      - targets: ["localhost:5000"]

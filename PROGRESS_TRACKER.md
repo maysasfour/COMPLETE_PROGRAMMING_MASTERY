@@ -193,10 +193,13 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 
 ## DevOps and Cloud
 
-- [ ] Docker fundamentals
-- [ ] Docker Compose
-- [ ] CI/CD pipeline basics
-- [ ] One cloud deployment
+- [ ] Docker fundamentals — blocked: Docker Desktop's backend will not start on this machine (see BUILD_STATUS.md)
+- [ ] Docker Compose — blocked, same reason
+- [x] CI/CD pipeline basics (Lesson 01 — real GitHub Actions workflow, validated locally with actionlint)
+- [x] Infrastructure as Code (Lesson 02 — real Terraform init/plan/apply/destroy against local/random providers)
+- [x] Reverse proxy and load balancing (Lesson 03 — real nginx, 3 backends, a genuine killed-process failover proof)
+- [x] Monitoring (Lesson 04 — real Prometheus scraping a hand-instrumented /metrics endpoint, live PromQL queries)
+- [ ] One cloud deployment — not done: no real cloud account used, per this repository's "no real credentials" rule (Lesson 05 covers the concepts + provider comparison instead)
 
 ## Command Line and OS
 

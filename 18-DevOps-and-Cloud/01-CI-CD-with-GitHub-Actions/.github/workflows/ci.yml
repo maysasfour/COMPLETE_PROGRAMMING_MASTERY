@@ -1,0 +1,46 @@
+name: CI
+
+# Runs on every push and every pull request targeting main -- the two events
+# that should always trigger a build+test check before code is trusted.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    # A matrix runs this job once per combination of listed values -- here,
+    # once each on JDK 17 and JDK 21, so a change that only breaks on one
+    # supported version is still caught, not just on whatever version a
+    # developer happens to have installed locally.
+    strategy:
+      matrix:
+        java-version: [17, 21]
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK ${{ matrix.java-version }}
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ matrix.java-version }}
+          distribution: temurin
+          # Caches ~/.m2/repository keyed on pom.xml's contents -- a cache hit
+          # skips re-downloading every dependency on every run, the single
+          # biggest speed win for a Maven-based CI job.
+          cache: maven
+
+      - name: Run tests
+        working-directory: ./sample-app
+        run: mvn --batch-mode --no-transfer-progress test
+
+      - name: Upload surefire test reports
+        if: always() # upload even if the test step failed, so failures are inspectable
+        uses: actions/upload-artifact@v4
+        with:
+          name: surefire-reports-jdk${{ matrix.java-version }}
+          path: sample-app/target/surefire-reports/

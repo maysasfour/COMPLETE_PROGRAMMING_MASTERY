@@ -81,3 +81,4 @@ Run each script in an empty, throwaway directory — every script initializes a 
 Work through 01 → 05 in order — each lesson builds on the previous one's concepts (branching requires understanding commits; rebase/cherry-pick assume familiarity with branching; PRs are built on branch comparison; CI often runs against PRs). See also [15-Testing-and-Debugging](../15-Testing-and-Debugging/README.md), whose Lesson 01 project is reused in this module's Lesson 05 to verify a real CI command.
 
 **Previous module:** [16-Security](../16-Security/README.md)
+**Next module:** [18-DevOps-and-Cloud](../18-DevOps-and-Cloud/README.md)

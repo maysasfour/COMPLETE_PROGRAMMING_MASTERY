@@ -77,4 +77,4 @@ Requires Bash (Git Bash on Windows, or any POSIX shell) and PowerShell (built in
 
 Work through 01 → 03 in order. See also [17-Git-and-GitHub](../17-Git-and-GitHub/README.md) for the same real-command-execution discipline applied to git specifically, and [16-Security](../16-Security/README.md) for more on the authorization-bug theme touched on in Lesson 02.
 
-**Previous module:** [05-Mobile-Development](../05-Mobile-Development/README.md)
+**Previous module:** [18-DevOps-and-Cloud](../18-DevOps-and-Cloud/README.md)
