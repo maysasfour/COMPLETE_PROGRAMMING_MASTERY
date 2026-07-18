@@ -7,6 +7,8 @@
 > Every other language course in this repository (Python through Kotlin) had every single example actually compiled/run and its real output verified. **This Swift course is a deliberate, disclosed exception.** Swift's official Windows toolchain ships only as a large (~570MB), system-wide InstallShield installer — unlike the self-contained zip/archive toolchains used for Go, Rust, PHP, and Kotlin, all of which install cleanly into an isolated, scratchpad-local directory with no lasting footprint on the host machine. Installing Swift would have meant a persistent, hard-to-reverse, machine-wide change (Program Files, registry entries, likely requiring admin elevation) with no way to first confirm silent/unattended install support in this non-interactive environment. When faced with this trade-off, the user explicitly chose to have this course written from documented Swift language knowledge rather than skip Swift or install it system-wide.
 >
 > **What this means practically:** every code example in this course is believed correct based on careful reasoning about documented Swift semantics, but **none of it has been compiled or run**. Every other course in this repository caught and fixed real bugs, real compiler errors, and real behavioral surprises specifically *because* the examples were executed — this course has not had that benefit. If you have access to a working Swift toolchain (macOS with Xcode, a Linux machine, or a working Windows install), please compile and run these examples yourself, and treat any discrepancy between documented and actual output as this course's error, not the language's.
+>
+> **Update — lessons 20–22 are the one exception.** In a later session, a working Swift 6.1.2 toolchain (`x86_64-unknown-windows-msvc`) turned out to already be installed in this environment — it just needed Visual Studio's `vcvarsall.bat x64` run first so `swiftc` could find the Windows SDK's C headers and `link.exe`. [20-Exercises](20-Exercises/README.md)/[21-Solutions](21-Solutions/README.md)/[22-Mini-Projects](22-Mini-Projects/README.md) were built against that real toolchain — every solution file and the mini-project's CLI and test suite were **genuinely compiled and run**, with real captured output (see those folders' own notices for the full story). Lessons 01–19 above remain exactly as originally written and still carry the full unverified disclosure — re-verifying them against this same now-available toolchain remains valuable, not-yet-done follow-up work.
 
 ## What Swift Is
 
@@ -101,7 +103,9 @@ swiftc Example.swift -o example
 | 17 | [API Integration](17-API-Integration/README.md) | `URLSession` with native `async`/`await`; `Codable` |
 | 18 | [Testing](18-Testing/README.md) | `XCTest` (built into the toolchain) |
 | 19 | [Best Practices](19-Best-Practices/README.md) | Force-unwrap, class-vs-struct aliasing, retain cycles |
-| 20-22 | Exercises / Solutions / Mini-Projects | *not yet built as standalone folders — see per-lesson Exercises/Solutions on 05-07* |
+| 20 | [Exercises](20-Exercises/README.md) | 7 standalone problems: optionals, struct/class aliasing, protocol extensions, enums, generics, async/actor, Codable |
+| 21 | [Solutions](21-Solutions/README.md) | All 7 solved — **genuinely compiled and run**, real captured output |
+| 22 | [Mini-Projects](22-Mini-Projects/README.md) | CLI Task Tracker (SQLite via raw C API, XCTest) — **genuinely compiled, run, and tested** |
 
 Also see: [CHEAT-SHEET.md](CHEAT-SHEET.md).
 

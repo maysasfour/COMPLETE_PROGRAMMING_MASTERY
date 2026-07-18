@@ -45,7 +45,7 @@ cd 01-Languages/Dart/03-Variables-and-Data-Types
 dart run example.dart
 ```
 
-Lessons 16 (`sqlite3` package) and 18 (`test` package) require `dart pub get` first to resolve their dependencies (documented in each lesson's own README).
+Lessons 16 (`sqlite3` package) and 18 (`test` package) require `dart pub get` first to resolve their dependencies (documented in each lesson's own README). Lessons 20-22 extend the same pattern: [20-Exercises](20-Exercises/README.md) is course-spanning practice problems (no dependencies), [21-Solutions](21-Solutions/README.md) their standalone `dart run`-able solutions, and [22-Mini-Projects](22-Mini-Projects/README.md) a full CLI Task Tracker combining `sqlite3` persistence with a `test`-package suite, requiring `dart pub get` from inside `22-Mini-Projects/task_tracker/`.
 
 ## Common Beginner Mistakes
 
@@ -95,12 +95,14 @@ Lessons 16 (`sqlite3` package) and 18 (`test` package) require `dart pub get` fi
 | 17 | [API Integration](17-API-Integration/README.md) | Built-in `dart:io HttpClient`; no exception on 404 |
 | 18 | [Testing](18-Testing/README.md) | The official `test` package |
 | 19 | [Best Practices](19-Best-Practices/README.md) | Identity-vs-content equality, force-unwrap, event-loop blocking — reproduced live |
-| 20-22 | Exercises / Solutions / Mini-Projects | *not yet built as standalone folders — see per-lesson Exercises/Solutions on 05-07* |
+| 20 | [Exercises](20-Exercises/README.md) | 8 standalone problems: null safety, cascades, mixins, extension methods, reified generics, `Future`/`Stream` |
+| 21 | [Solutions](21-Solutions/README.md) | Runnable solutions to all 8 exercises, each with real `dart run` output |
+| 22 | [Mini Projects](22-Mini-Projects/README.md) | CLI Task Tracker — full CRUD over `sqlite3`, `pubspec.yaml`-based package layout, 10-case `test` suite |
 
 Also see: [CHEAT-SHEET.md](CHEAT-SHEET.md).
 
 ## Suggested Path
 
-Work through 01 → 19 in order. Lessons 05, 06, and 07 have `Exercises`/`Solutions` pairs. Given this repository's existing Kotlin and Swift courses, Dart is best read with both open alongside it — several lessons draw direct, three-way comparisons (null safety, closures, async/concurrency) most useful when those baselines are fresh in mind.
+Work through 01 → 19 in order, then 20 → 22 as a capstone. Lessons 05, 06, and 07 have `Exercises`/`Solutions` pairs; 20-22 provide a second, course-spanning round of practice problems, solutions, and a full mini-project. Given this repository's existing Kotlin and Swift courses, Dart is best read with both open alongside it — several lessons draw direct, three-way comparisons (null safety, closures, async/concurrency) most useful when those baselines are fresh in mind.
 
 **Previous language:** [Swift](../Swift/README.md) | **This is the last language in the specified build order.**

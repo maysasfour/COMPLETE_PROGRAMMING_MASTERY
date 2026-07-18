@@ -98,12 +98,14 @@ cl /EHsc /std:c++20 example.cpp && example.exe
 | 17 | [API Integration](17-API-Integration/README.md) | No built-in HTTP client; libcurl overview |
 | 18 | [Testing](18-Testing/README.md) | Assertion-based testing and a look at Catch2 |
 | 19 | [Best Practices](19-Best-Practices/README.md) | RAII, smart pointers, the Rule of Three/Five, synthesis |
-| 20-22 | Exercises / Solutions / Mini-Projects | *not yet built as standalone folders — see per-lesson Exercises/Solutions on 05-07* |
+| 20 | [Exercises](20-Exercises/README.md) | 7 standalone problems: RAII vs. raw `new`/`delete`, slicing, STL/`<algorithm>`, custom exception hierarchies, concept-constrained templates, `shared_ptr`/`weak_ptr` cycles, Rule of Five vs. Rule of Zero |
+| 21 | [Solutions](21-Solutions/README.md) | Worked, compiled-and-run solutions to all 7 exercises |
+| 22 | [Mini-Projects](22-Mini-Projects/README.md) | CLI Task Tracker — SQLite C API wrapped in an RAII `TaskRepository`, custom exception, Catch2 test suite |
 
 Also see: [CHEAT-SHEET.md](CHEAT-SHEET.md).
 
 ## Suggested Path
 
-Work through 01 → 19 in order. Lessons 05, 06, and 07 have `Exercises/`/`Solutions/` pairs.
+Work through 01 → 22 in order. Lessons 05, 06, and 07 have their own `Exercises/`/`Solutions/` pairs; 20-22 are standalone, course-spanning Exercises/Solutions/Mini-Project folders to tackle after finishing 01-19.
 
 **Previous language:** [Java](../Java/README.md) | **Next:** [Go](../Go/README.md)

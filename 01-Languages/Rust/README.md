@@ -95,12 +95,14 @@ For lessons needing external crates (16-Database-Access, 17-API-Integration if u
 | 17 | [API Integration](17-API-Integration/README.md) | HTTP via a crate (`ureq`), since none is built in |
 | 18 | [Testing](18-Testing/README.md) | Built-in `#[test]`, `cargo test` |
 | 19 | [Best Practices](19-Best-Practices/README.md) | Synthesis checklist across lessons 01–18 |
-| 20-22 | Exercises / Solutions / Mini-Projects | *not yet built as standalone folders — see per-lesson Exercises/Solutions on 05-07* |
+| 20 | [Exercises](20-Exercises/README.md) | 7 standalone problems: lifetimes, custom errors + `?`, trait defaults, generics/monomorphization, `Fn`/`FnMut`/`FnOnce` |
+| 21 | [Solutions](21-Solutions/README.md) | Verified, compiled solutions to all 7 exercises |
+| 22 | [Mini-Projects](22-Mini-Projects/README.md) | CLI Task Tracker — `rusqlite` (bundled SQLite), `lib`+`bin` crate split, `cargo test` (11 unit + 3 integration) |
 
 Also see: [CHEAT-SHEET.md](CHEAT-SHEET.md).
 
 ## Suggested Path
 
-Work through 01 → 19 in order — Rust's ownership model (Lesson 03) is foundational to nearly everything after it, more so than any single early lesson in any other language course in this repository. Lessons 05, 06, and 07 have `Exercises/`/`Solutions/` pairs.
+Work through 01 → 19 in order — Rust's ownership model (Lesson 03) is foundational to nearly everything after it, more so than any single early lesson in any other language course in this repository. Lessons 05, 06, and 07 have `Exercises/`/`Solutions/` pairs. After 19, [20-Exercises](20-Exercises/README.md) → [21-Solutions](21-Solutions/README.md) → [22-Mini-Projects](22-Mini-Projects/README.md) close out the course with cross-cutting practice problems and a complete SQLite-backed CLI application.
 
 **Previous language:** [Go](../Go/README.md) | **Next:** [PHP](../PHP/README.md)

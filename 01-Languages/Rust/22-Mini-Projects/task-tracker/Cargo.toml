@@ -1,0 +1,23 @@
+[package]
+name = "task-tracker"
+version = "0.1.0"
+edition = "2021"
+
+# Splitting into a lib target (task_tracker) plus a thin bin target lets the
+# tests/ integration suite depend on the crate's public API directly, the
+# same "library + thin CLI shell" split Lesson 18's testing lesson uses --
+# extended here from a demo crate to a real, persistent CLI application.
+[lib]
+name = "task_tracker"
+path = "src/lib.rs"
+
+[[bin]]
+name = "task-tracker"
+path = "src/main.rs"
+
+[dependencies]
+# bundled compiles SQLite's C source directly into the build (Lesson 16's
+# exact pattern) -- no system SQLite install required, only a working C
+# compiler, which cargo locates automatically via the same MSVC toolchain
+# used throughout this course.
+rusqlite = { version = "0.32", features = ["bundled"] }

@@ -1,0 +1,8 @@
+# A minimal Bundler Gemfile -- Ruby's equivalent of package.json/composer.json.
+# `bundle install` reads this, resolves compatible versions of every
+# dependency (and their own transitive dependencies), and writes the exact
+# resolved set to Gemfile.lock for reproducible installs on any machine.
+source "https://rubygems.org"
+
+gem "sqlite3", "~> 2.9"   # used later in this course, Lessons 16 and 22
+gem "minitest", "~> 5.25"  # Ruby's built-in-to-the-ecosystem test framework, Lesson 18

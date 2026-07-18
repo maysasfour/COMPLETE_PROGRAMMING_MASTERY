@@ -16,6 +16,9 @@ obj/
 *.pdb
 *.ilk
 *.out
+*.db
+*.sqlite
+*.sqlite3
 target/
 *.phar
 vendor/
@@ -23,4 +26,10 @@ vendor/
 .packages
 build/
 *.jks
+.build/
+# SQLite amalgamation source, fetched on demand by fetch-sqlite3.sh -- see
+# 01-Languages/Swift/22-Mini-Projects/TaskTracker/README.md (not committed, like this
+# repository's other downloaded-JAR/driver dependencies)
+01-Languages/Swift/22-Mini-Projects/TaskTracker/Sources/CSQLite3/sqlite3.c
+01-Languages/Swift/22-Mini-Projects/TaskTracker/Sources/CSQLite3/include/sqlite3.h
 

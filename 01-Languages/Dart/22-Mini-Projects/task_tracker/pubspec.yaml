@@ -1,0 +1,9 @@
+name: task_tracker
+description: A CLI task tracker persisted to SQLite via the sqlite3 package (Lesson 16's pattern).
+publish_to: 'none'
+environment:
+  sdk: ^3.0.0
+dependencies:
+  sqlite3: ^2.4.0
+dev_dependencies:
+  test: ^1.25.0

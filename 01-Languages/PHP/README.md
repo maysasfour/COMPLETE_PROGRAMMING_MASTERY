@@ -93,12 +93,14 @@ Lesson 18 (Testing) needs PHPUnit, downloaded as a standalone `.phar` (see that 
 | 17 | [API Integration](17-API-Integration/README.md) | `curl`/`file_get_contents`, no exception on 404 |
 | 18 | [Testing](18-Testing/README.md) | PHPUnit (downloaded `.phar`), data providers |
 | 19 | [Best Practices](19-Best-Practices/README.md) | `===`, parameterized queries, checked file I/O — reproduced live |
-| 20-22 | Exercises / Solutions / Mini-Projects | *not yet built as standalone folders — see per-lesson Exercises/Solutions on 05-07* |
+| 20 | [Exercises](20-Exercises/README.md) | 7 standalone problems: `match(true)`, trait conflicts, backed enums, `use (&$var)`, `Error`/`Exception` split, named arguments |
+| 21 | [Solutions](21-Solutions/README.md) | Worked, verified solutions to all 20-Exercises problems |
+| 22 | [Mini-Projects](22-Mini-Projects/README.md) | CLI Task Tracker — PDO/SQLite persistence, PHPUnit test suite |
 
 Also see: [CHEAT-SHEET.md](CHEAT-SHEET.md).
 
 ## Suggested Path
 
-Work through 01 → 19 in order. Lessons 05, 06, and 07 have `Exercises`/`Solutions` pairs. Lesson 13 (Generics) is worth reading even though PHP has none — it explains the real workarounds used in professional PHP codebases. Lesson 19 ties together the course's three most consequential recurring gotchas (`==` vs `===`, SQL injection via concatenation, unchecked file I/O), each reproduced live.
+Work through 01 → 19 in order. Lessons 05, 06, and 07 have `Exercises`/`Solutions` pairs. Lesson 13 (Generics) is worth reading even though PHP has none — it explains the real workarounds used in professional PHP codebases. Lesson 19 ties together the course's three most consequential recurring gotchas (`==` vs `===`, SQL injection via concatenation, unchecked file I/O), each reproduced live. After finishing the core course, [20-Exercises](20-Exercises/README.md)/[21-Solutions](21-Solutions/README.md) offer 7 further standalone problems spanning the whole course, and [22-Mini-Projects](22-Mini-Projects/README.md) is a complete CLI Task Tracker (PDO/SQLite + PHPUnit) worth reading end-to-end as a real, if small, application.
 
 **Previous language:** [Rust](../Rust/README.md) | **Next:** [Kotlin](../Kotlin/README.md)

@@ -95,12 +95,14 @@ go run main.go
 | 17 | [API Integration](17-API-Integration/README.md) | Built-in `net/http` client |
 | 18 | [Testing](18-Testing/README.md) | Built-in `testing` package, table-driven tests |
 | 19 | [Best Practices](19-Best-Practices/README.md) | Synthesis checklist across lessons 01–18 |
-| 20-22 | Exercises / Solutions / Mini-Projects | *not yet built as standalone folders — see per-lesson Exercises/Solutions on 05-07* |
+| 20 | [Exercises](20-Exercises/README.md) | 7 standalone problems spanning the whole course |
+| 21 | [Solutions](21-Solutions/README.md) | Verified solutions to all 7 exercises, real `go run` output |
+| 22 | [Mini Projects](22-Mini-Projects/README.md) | CLI Task Tracker — `database/sql` + `modernc.org/sqlite`, `go test` suite |
 
 Also see: [CHEAT-SHEET.md](CHEAT-SHEET.md).
 
 ## Suggested Path
 
-Work through 01 → 19 in order. Lessons 05, 06, and 07 have `Exercises/`/`Solutions/` pairs.
+Work through 01 → 22 in order. Lessons 05, 06, and 07 have their own `Exercises/`/`Solutions/` pairs; 20–22 are a standalone exercise bank, solution set, and mini-project that come after 19.
 
 **Previous language:** [C++](../Cpp/README.md) | **Next:** [Rust](../Rust/README.md)

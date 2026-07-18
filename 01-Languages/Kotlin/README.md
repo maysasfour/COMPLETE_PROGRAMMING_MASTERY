@@ -95,12 +95,14 @@ Lessons needing external libraries (10 and 17 use Gson; 14 and 19 use `kotlinx-c
 | 17 | [API Integration](17-API-Integration/README.md) | `java.net.http.HttpClient`; no exception on 404 |
 | 18 | [Testing](18-Testing/README.md) | `kotlin.test` + JUnit 5 binding |
 | 19 | [Best Practices](19-Best-Practices/README.md) | `!!`, exposed mutable collections, `Thread.sleep()` in coroutines — reproduced live |
-| 20-22 | Exercises / Solutions / Mini-Projects | *not yet built as standalone folders — see per-lesson Exercises/Solutions on 05-07* |
+| 20 | [Exercises](20-Exercises/README.md) | 7 standalone problems: null safety, data classes, sealed classes, extension functions, declaration-site variance, coroutines |
+| 21 | [Solutions](21-Solutions/README.md) | Matching, verified solutions for all 7 exercises, real compiled/run output |
+| 22 | [Mini-Projects](22-Mini-Projects/README.md) | CLI Task Tracker — JDBC/SQLite persistence, `kotlin.test`/JUnit 5 suite (10 tests) |
 
 Also see: [CHEAT-SHEET.md](CHEAT-SHEET.md).
 
 ## Suggested Path
 
-Work through 01 → 19 in order. Lessons 05, 06, and 07 have `Exercises`/`Solutions` pairs. Given this repository's existing Java course, Kotlin is best read with Java open alongside it — nearly every lesson draws a direct, verified contrast (null safety, `==`/`===`, final-by-default classes, declaration-site variance) that's most useful when the Java baseline is fresh in mind.
+Work through 01 → 19 in order. Lessons 05, 06, and 07 have `Exercises`/`Solutions` pairs. Given this repository's existing Java course, Kotlin is best read with Java open alongside it — nearly every lesson draws a direct, verified contrast (null safety, `==`/`===`, final-by-default classes, declaration-site variance) that's most useful when the Java baseline is fresh in mind. After finishing 01 → 19, [20-Exercises](20-Exercises/README.md) → [21-Solutions](21-Solutions/README.md) → [22-Mini-Projects](22-Mini-Projects/README.md) provide a standalone practice bank and a complete capstone CLI application tying the whole course together.
 
 **Previous language:** [PHP](../PHP/README.md) | **Next:** [Swift](../Swift/README.md)

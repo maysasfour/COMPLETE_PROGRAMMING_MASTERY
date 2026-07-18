@@ -49,15 +49,15 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 - [x] TypeScript (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a CLI Task Tracker using node:sqlite, 10/10 tests passing)
 - [x] Java (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a CLI Expense Tracker with Maven, JDBC/SQLite, and JUnit 5)
 - [x] C# (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a SQLite-backed CLI Task Tracker with an xUnit test project, 10/10 tests passing)
-- [ ] C++ (core lessons 01-19 of 22 done: Setup through Best Practices — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
+- [x] C++ (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a SQLite-backed CLI Task Tracker with a Catch2 test suite, 24/24 assertions passing)
 - [ ] C
-- [ ] Go (core lessons 01-19 of 22 done: Setup through Best Practices — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
-- [ ] Rust (core lessons 01-19 of 22 done: Setup through Best Practices — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
-- [ ] Kotlin (core lessons 01-19 of 22 done: Setup through Best Practices — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
-- [ ] Swift (core lessons 01-19 of 22 done: Setup through Best Practices — see [BUILD_STATUS.md](BUILD_STATUS.md); UNVERIFIED — no working Swift toolchain in this environment, see Swift course README's honesty notice; lessons 20-22 not yet built)
-- [ ] PHP (core lessons 01-19 of 22 done: Setup through Best Practices — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
-- [ ] Ruby
-- [ ] Dart (core lessons 01-19 of 22 done: Setup through Best Practices, fully verified by execution — see [BUILD_STATUS.md](BUILD_STATUS.md); lessons 20-22 standalone Exercises/Solutions/Mini-Projects not yet built)
+- [x] Go (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a modernc.org/sqlite-backed CLI Task Tracker, 12/12 tests passing)
+- [x] Rust (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a rusqlite-backed CLI Task Tracker with a lib+bin crate split, 14/14 tests passing)
+- [x] Kotlin (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a JDBC/sqlite-jdbc CLI Task Tracker, 10/10 tests passing)
+- [x] Swift (all 22 lessons — core 01-19 remain UNVERIFIED, written before a toolchain was found, see the course README's honesty notice; lessons 20-22, built later once Swift 6.1.2 was discovered working in this environment via `vcvarsall.bat x64`, ARE fully compiled/run-verified, including a real CLI Task Tracker and XCTest suite)
+- [x] PHP (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a PDO/SQLite CLI Task Tracker with a PHPUnit suite, 15/15 tests passing)
+- [x] Ruby (all 22 lessons, fully verified by execution: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a sqlite3-gem CLI Task Tracker with a Minitest suite, 10/10 tests passing; includes a real measured GVL/thread-concurrency demo)
+- [x] Dart (all 22 lessons, fully verified by execution: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a sqlite3-backed CLI Task Tracker, 10/10 tests passing)
 
 ## Object-Oriented Programming
 
