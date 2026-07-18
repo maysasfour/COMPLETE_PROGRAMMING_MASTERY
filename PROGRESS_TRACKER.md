@@ -50,7 +50,7 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 - [x] Java (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a CLI Expense Tracker with Maven, JDBC/SQLite, and JUnit 5)
 - [x] C# (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a SQLite-backed CLI Task Tracker with an xUnit test project, 10/10 tests passing)
 - [x] C++ (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a SQLite-backed CLI Task Tracker with a Catch2 test suite, 24/24 assertions passing)
-- [ ] C
+- [x] C (all 22 lessons, fully verified by execution with MSVC `/std:c17`: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a SQLite C API CLI Task Tracker with a hand-rolled test harness, 15/15 assertions passing)
 - [x] Go (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a modernc.org/sqlite-backed CLI Task Tracker, 12/12 tests passing)
 - [x] Rust (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a rusqlite-backed CLI Task Tracker with a lib+bin crate split, 14/14 tests passing)
 - [x] Kotlin (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a JDBC/sqlite-jdbc CLI Task Tracker, 10/10 tests passing)
@@ -58,6 +58,7 @@ Check items off as you complete them. Edit this file directly and change `[ ]` t
 - [x] PHP (all 22 lessons: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a PDO/SQLite CLI Task Tracker with a PHPUnit suite, 15/15 tests passing)
 - [x] Ruby (all 22 lessons, fully verified by execution: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a sqlite3-gem CLI Task Tracker with a Minitest suite, 10/10 tests passing; includes a real measured GVL/thread-concurrency demo)
 - [x] Dart (all 22 lessons, fully verified by execution: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a sqlite3-backed CLI Task Tracker, 10/10 tests passing)
+- [x] Haskell (all 22 lessons, fully verified by execution via GHC 9.8.2/Cabal — this repository's first purely functional course: core 01-19 plus 20-Exercises/21-Solutions/22-Mini-Projects — a Cabal library+executable+test-suite CLI Task Tracker with a pure `Tasks.hs` core, `sqlite-simple` persistence, and an Hspec suite)
 
 ## Object-Oriented Programming
 
