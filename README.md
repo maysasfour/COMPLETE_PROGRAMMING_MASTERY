@@ -159,12 +159,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Disclaimer
 
-Software technology moves fast. Version numbers, APIs, and best practices in this repository reflect what was current at the time of writing (see [VERSIONS.md](VERSIONS.md)). Always cross-check against official documentation before relying on version-specific details in production.                                                                                                                                                       ## 🐍 My Contributions
+Software technology moves fast. Version numbers, APIs, and best practices in this repository reflect what was current at the time of writing (see [VERSIONS.md](VERSIONS.md)). Always cross-check against official documentation before relying on version-specific details in production.                                                                                                                                             
+
+
+## 🐍 My Contributions
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/{maysasfour}/{maysasfour}/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/{USERNAME}/{maysasfour}/output/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/{maysasfour}/{maysasfour}/output/github-contribution-grid-snake.svg" />
     <img alt="github-snake" src="https://raw.githubusercontent.com/{maysasfour}/{maysasfour}/output/github-contribution-grid-snake.svg" />
   </picture>
 </div>
